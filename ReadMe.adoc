@@ -4,9 +4,53 @@
 :Revision: version#
 :License: Public Domain
 
-= Project: {Project}
+= Project: {Alexa Skills based Remote Gardening}
 
-Describe your project
+## Inspiration
+
+Gardening is one of the common hobbies around the world and has seen no major advancements made in recent years. Gardening is a hobby that is close to the heart of a lot of people but many people can not get into it due to their busy lives.
+ 
+From a young age, I have been brought up around gardens as my grandfather after his retirement started a small vegetable garden in his backyard and as he grows older day by day he is unable to do his daily gardening chores and seeing this I wanted to make a feasible and cheap solution in order to help him.
+ 
+Taking this as inspiration I went to the drawing board with my partner and started researching for options and found that none of them offers a simple and intuitive setup. When the complexity of a device increases the lesser the adopters hence we decided to change that with this project.
+
+## What it does
+
+It is a smart gardening kit that will help to water and manage your plants and help to maintain your garden when you are out on a business trip or are unable to water and check on your plants etc. It makes use of an Arduino board, Arduino creative cloud and Arduino Alexa Skills. These take care of the software side of things. As for the hardware it will use a temperature and humidity sensor and a solenoid valve with a couple of indicator LED's to give visual feedback to the user.
+
+Using the Arduino Alexa Skills we can have Alexa schedule the watering of the plants daily at a specific time with routines and also use specific keywords to get certain actions. For example 
+
+Hey Alexa please water the garden
+
+This will trigger a routine that will turn on the water switch for the garden for a specific amount of time and this can also be set in a way that you don't have to issue any commands you can just set it up in a way that automatically at a specific time of the day it will water the plants without you needing to lift a finger.
+
+
+## How we built it..........
+
+The pandemic is ravaging our nation at the moment and with the lockdown, in place, it placed a lot of challenges in acquiring two specific parts that we needed. We had to make do for now with a proof of concept by using just the indicator LED in place of a solenoid valve or a motor to control the water flow. We were also unable to get hold of a temperature and humidity sensor so had to make do without it for now.
+
+We used an Arduino  MKR1010 WiFi board which has an inbuilt WiFi and Bluetooth chip and makes use of a faster processor compared to the Arduino Uno. We connected it with our WiFi via the IoT cloud Application provided by Arduino and configured it to our network. Once this was done we connected our IoT cloud account with the Amazon Alexa application using the Amazon Alexa Skills SDK. 
+
+Once this was done all that was left was to code the cloud switch variable and set up the pin numbers etc on the board. After a little bit of tinkering here and there, we solved the problems and got it up and running.
+
+## Challenges we ran into
+
+Boy 'O Boy we ran into some silly problems at the start, 
+Initially, when we were connecting the board with the computer the Arduino Create Agent (which is what interfaces with the board and the Online editor) kept crashing and we were perplexed. After racking our heads for a while and trying all sorts of challenges we were able to pinpoint the problem with the cable being used to connect the board to the computer. It was a bizarre solution to an extremely annoying problem.
+
+Our next problem was that when we finished with all the code and tried to test it out the cloud switch would not update. We had to go back and look into the code and after some brainstorming, we decided to rewrite it in a simplified way and once we were done we were able to make it work.
+
+## Accomplishments that we're proud of
+
+We are proud of the fact that for our first big hardware project we were able to make this work and though we ran into issues we were able to solve them successfully. Being students from a computer Science background we tend to overlook hardware projects as we think of them as not being important. We are happy to have made something that we are proud of and we look forward to improving it to a point that we can make it into an open-source project.
+
+## What we learned
+
+We learnt to work with Arduino for the first time and we also learned how to configure and make it work. This was a big achievement for us as this is our very first hardware project.
+
+## What's next ????
+
+We plan to make our project compatible with the Matter Alliance which will help this project not only work with Amazon Alexa Skills but will also make it available in Apple HomeKit and Google Assistant Actions. This will pave way for a more robust project and will help us achieve our goal of making this project open source and available to everyone to set up in their gardens.
 
 == Step 1: Installation
 Please describe the steps to install this project.
