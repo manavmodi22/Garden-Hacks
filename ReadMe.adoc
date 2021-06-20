@@ -4,7 +4,7 @@
 :Revision: version#
 :License: Public Domain
 
-= Project: {Alexa Skills based Remote Gardening}
+= Project: Alexa Skills based Remote Gardening Kit
 
 ## Inspiration
 
@@ -51,6 +51,8 @@ We learnt to work with Arduino for the first time and we also learned how to con
 ## What's next ????
 
 We plan to make our project compatible with the Matter Alliance which will help this project not only work with Amazon Alexa Skills but will also make it available in Apple HomeKit and Google Assistant Actions. This will pave way for a more robust project and will help us achieve our goal of making this project open source and available to everyone to set up in their gardens.
+
+## Try Your Hands Out!
 
 == Step 1: Installation
 Please describe the steps to install this project.
